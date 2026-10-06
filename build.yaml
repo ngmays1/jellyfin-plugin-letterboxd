@@ -1,0 +1,19 @@
+---
+name: "Letterboxd"
+guid: "9114b8e2-87f8-48f1-9e7b-d7f74302f754"
+version: "12.1.0.0"
+targetAbi: "12.1.0.0"
+framework: "net10.0"
+overview: "Letterboxd reviews, ratings and taste-based movie recommendations for your library."
+description: >
+  Pulls your Letterboxd diary and reviews from the official RSS feed, matches them to
+  items in your Jellyfin library, builds a taste profile from your ratings, and uses
+  TMDB recommendations to suggest similar movies you already own — plus a list of
+  movies worth adding. Results surface as a playlist, a sidebar page, and a dashboard
+  config page.
+category: "General"
+owner: "nyx"
+artifacts:
+  - "Jellyfin.Plugin.Letterboxd.dll"
+changelog: >
+  12.1.0.0 - Initial release.

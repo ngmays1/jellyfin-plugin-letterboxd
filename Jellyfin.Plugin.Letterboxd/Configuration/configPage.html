@@ -1,0 +1,74 @@
+<div data-role="page" id="LetterboxdConfigPage" class="page type-interior pluginConfigurationPage" data-controller="__plugin/Letterboxd.js">
+    <div class="content-primary">
+
+        <div class="verticalSection">
+            <div class="sectionTitleContainer">
+                <h2 class="sectionTitle">Letterboxd</h2>
+            </div>
+            <div class="fieldDescription" id="LetterboxdSubtitle">
+                Letterboxd reviews, ratings and taste-based suggestions.
+            </div>
+        </div>
+
+        <form id="LetterboxdConfigForm">
+            <div class="verticalSection">
+                <div class="inputContainer">
+                    <input is="emby-input" type="text" id="txtLbUsername" label="Letterboxd username" />
+                    <div class="fieldDescription">Your Letterboxd profile name. Diary entries, ratings and reviews are pulled from your public RSS feed.</div>
+                </div>
+                <div class="inputContainer">
+                    <input is="emby-input" type="text" id="txtTmdbKey" label="TMDB API key (v3)" />
+                    <div class="fieldDescription">Optional — falls back to the key used by the built-in TMDb metadata provider if left empty.</div>
+                </div>
+                <div class="inputContainer">
+                    <input is="emby-input" type="number" id="numSyncHours" min="1" max="168" label="Sync interval (hours)" />
+                </div>
+                <div class="inputContainer">
+                    <input is="emby-input" type="text" id="txtPlaylistName" label="Playlist name" />
+                </div>
+                <div class="inputContainer">
+                    <input is="emby-input" type="text" id="txtPlaylistOwner" label="Playlist owner (Jellyfin username)" />
+                    <div class="fieldDescription">Leave empty to use the first admin account. The playlist is created with open access so every user can see it.</div>
+                </div>
+                <div class="inputContainer">
+                    <input is="emby-input" type="number" id="numMaxPlaylist" min="1" max="200" label="Max playlist items" />
+                </div>
+                <div class="inputContainer">
+                    <input is="emby-input" type="number" id="numMaxMissing" min="1" max="500" label="Max missing suggestions" />
+                </div>
+                <label class="emby-checkbox-label">
+                    <input is="emby-checkbox" type="checkbox" id="chkEnablePlaylist" />
+                    <span>Keep the playlist in sync</span>
+                </label>
+                <label class="emby-checkbox-label">
+                    <input is="emby-checkbox" type="checkbox" id="chkEnableSidebar" />
+                    <span>Show sidebar page (requires Plugin Pages + File Transformation)</span>
+                </label>
+            </div>
+
+            <div class="verticalSection">
+                <h2 class="sectionTitle">Status</h2>
+                <div class="fieldDescription" id="LetterboxdStatus">Loading…</div>
+                <div style="margin-top: 1em;">
+                    <button is="emby-button" type="button" class="raised button-submit" id="btnLbSync">
+                        <span>Sync now</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="verticalSection">
+                <h2 class="sectionTitle">Recent reviews</h2>
+                <div id="LetterboxdReviews"></div>
+            </div>
+
+            <div class="verticalSection">
+                <h2 class="sectionTitle">Suggestions</h2>
+                <div id="LetterboxdRecs"></div>
+            </div>
+
+            <button is="emby-button" type="submit" class="raised button-submit block" id="btnLbSave">
+                <span>Save</span>
+            </button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+{
+  "category": "General",
+  "changelog": "12.1.0.0 - Initial release.",
+  "description": "Pulls your Letterboxd diary and reviews from the official RSS feed, matches them to items in your Jellyfin library, builds a taste profile from your ratings, and uses TMDB recommendations to suggest similar movies you already own, plus a list of movies worth adding.",
+  "guid": "9114b8e2-87f8-48f1-9e7b-d7f74302f754",
+  "name": "Letterboxd",
+  "overview": "Letterboxd reviews, ratings and taste-based movie recommendations for your library.",
+  "owner": "nyx",
+  "targetAbi": "12.1.0.0",
+  "timestamp": "2026-10-06T00:00:00.0000000Z",
+  "version": "12.1.0.0",
+  "status": "Active",
+  "autoUpdate": false,
+  "assemblies": []
+}
