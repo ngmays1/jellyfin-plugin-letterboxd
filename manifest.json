@@ -1,0 +1,20 @@
+[
+    {
+        "guid": "9114b8e2-87f8-48f1-9e7b-d7f74302f754",
+        "name": "Letterboxd",
+        "description": "Pulls your Letterboxd diary and reviews from the official RSS feed, matches them to items in your Jellyfin library, builds a taste profile from your ratings, and uses TMDB recommendations to suggest similar movies you already own \u2014 plus a list of movies worth adding. Results surface as a playlist, a sidebar page, and a dashboard config page.\n",
+        "overview": "Letterboxd reviews, ratings and taste-based movie recommendations for your library.",
+        "owner": "nyx",
+        "category": "General",
+        "versions": [
+            {
+                "version": "12.1.0.0",
+                "changelog": "12.1.0.0 - Initial release.\n",
+                "targetAbi": "12.1.0.0",
+                "sourceUrl": "https://raw.githubusercontent.com/ngmays1/jellyfin-plugin-letterboxd/master/letterboxd/letterboxd_12.1.0.0.zip",
+                "checksum": "da5e0f1de1264519ef36b039e40b417a",
+                "timestamp": "2026-10-06T20:32:22Z"
+            }
+        ]
+    }
+]
