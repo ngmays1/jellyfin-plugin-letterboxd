@@ -1,5 +1,7 @@
 # Letterboxd for Jellyfin
 
+[![Build & Release](https://img.shields.io/github/actions/workflow/status/ngmays1/jellyfin-plugin-letterboxd/.github/workflows/release.yml?branch=master&label=release)](https://github.com/ngmays1/jellyfin-plugin-letterboxd/actions/workflows/release.yml)
+
 Brings your [Letterboxd](https://letterboxd.com/) diary, reviews and ratings into
 Jellyfin, and uses them to recommend movies from (and *for*) your library.
 
